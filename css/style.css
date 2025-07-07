@@ -29,8 +29,8 @@ body {
     width: 100%;
     margin: 40px auto 0 auto;
     background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 6px 32px rgba(0,40,85,0.10);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,40,85,0.13);
     padding: 40px 36px 32px 36px;
     text-align: center;
     border: 1px solid #e3e7ee;
@@ -49,64 +49,75 @@ h1 {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 20px;
     align-items: stretch;
 }
 
 .input-group {
     display: flex;
     align-items: center;
-    background: #f0f2f5;
-    border-radius: 6px;
-    padding: 0 12px;
-    border: 1px solid #bfc9d9;
+    background: #f8fafc;
+    border-radius: 8px;
+    padding: 0 14px;
+    border: 1px solid #c7d0e1;
     box-sizing: border-box;
     width: 100%;
     margin-bottom: 0;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+.input-group:focus-within {
+    border: 1.5px solid #005fa3;
+    box-shadow: 0 0 0 2px #e3e7ee;
 }
 
 .input-icon {
-    color: #002855;
-    font-size: 1.1em;
-    margin-right: 8px;
+    color: #005fa3;
+    font-size: 1.15em;
+    margin-right: 10px;
 }
 
 input[type="text"], input[type="password"], input[type="email"] {
     border: none;
     background: transparent;
     outline: none;
-    padding: 12px 8px;
+    padding: 14px 8px;
     width: 100%;
     font-size: 1em;
     font-family: inherit;
     color: #002855;
     box-sizing: border-box;
+    transition: background 0.2s;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
+    background: #eef3fa;
 }
 
 button[type="submit"] {
     background: linear-gradient(90deg, #002855 60%, #005fa3 100%);
     color: #fff;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     padding: 14px 0;
-    font-size: 1.05em;
+    font-size: 1.08em;
     font-weight: 600;
     cursor: pointer;
     transition: background 0.2s, box-shadow 0.2s;
-    box-shadow: 0 2px 8px rgba(0,40,85,0.08);
+    box-shadow: 0 2px 8px rgba(0,40,85,0.10);
     letter-spacing: 0.5px;
     width: 100%;
     margin-top: 8px;
 }
 
-button[type="submit"]:hover {
+button[type="submit"]:hover, button[type="submit"]:focus {
     background: linear-gradient(90deg, #005fa3 60%, #002855 100%);
-    box-shadow: 0 4px 16px rgba(0,40,85,0.12);
+    box-shadow: 0 4px 16px rgba(0,40,85,0.15);
 }
 
 .forgot-password {
     color: #005fa3;
-    font-size: 0.9em;
+    font-size: 0.95em;
     text-decoration: none;
     margin-top: 6px;
     margin-bottom: 0;
