@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <a href="#">About</a>
             <a href="#">Projects</a>
             <a href="#">Contact</a>
-            <a href="#">Login</a>
+            <a href="#login">Login</a>
         </nav>
     </header>
     <section class="hero">
@@ -58,21 +58,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <a href="#">Contact</a>
         </div>
     </footer>
-    <script>
-        const form = document.querySelector('.login-form');
-        const submitButton = form.querySelector('button[type="submit"]');
-
-        form.addEventListener('submit', function() {
-            submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading...';
-            submitButton.disabled = true;
-        });
-
-        const forgotPasswordLink = document.querySelector('.forgot-password');
-
-        forgotPasswordLink.addEventListener('click', function(event) {
-            event.preventDefault();
-            alert('Password reset functionality is not implemented in this demo. Please contact support@cgeat.org.');
-        });
-    </script>
 </body>
 </html>
