@@ -10,41 +10,52 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CG EAT Login</title>
+    <title>CG EAT - Government Efficiency Portal</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:400,600,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <div class="header-bar">
-        <span><i class="fa fa-landmark"></i> Center for Government Efficiency, Accountability and Transparency</span>
-    </div>
-    <div class="container">
-        <h1>Member Login Portal</h1>
-        <form class="login-form" method="post" autocomplete="off">
-            <div class="input-group">
-                <span class="input-icon"><i class="fa fa-envelope"></i></span>
-                <input type="email" id="userId" name="userId" placeholder="Email" required>
-            </div>
-            <div class="input-group">
-                <span class="input-icon"><i class="fa fa-lock"></i></span>
-                <input type="password" id="password" name="password" placeholder="Password" required>
-            </div>
-            <button type="submit">Login</button>
-            <a href="#" class="forgot-password">Forgot Password?</a>
-            <?php if ($message): ?>
-                <div class="message"><?= htmlspecialchars($message) ?></div>
-            <?php endif; ?>
-        </form>
-    </div>
-    <footer>
-        <div class="footer-icons">
-            <a href="https://github.com/cgeat" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank" title="GPLv3"><i class="fab fa-creative-commons"></i></a>
-            <a href="mailto:admin@cgeat.org" title="Contact"><i class="fa fa-envelope"></i></a>
+    <header class="site-header">
+        <div class="logo">CG EAT</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+            <a href="#">Login</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Empowering Government Efficiency</h1>
+        <p>Driving digital transformation for better public services.</p>
+        <a href="#login" class="cta-btn">Get Started</a>
+    </section>
+    <section class="about">
+        <h2>Our Mission</h2>
+        <p>
+            CG EAT is dedicated to improving government efficiency through technology, collaboration, and innovation.
+        </p>
+    </section>
+    <section class="login-section" id="login">
+        <div class="login-container">
+            <h2>Member Login</h2>
+            <form class="login-form" method="post" action="src/validate.php">
+                <input type="email" name="userId" placeholder="Email Address" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+                <?php if ($message): ?>
+                    <div class="message"><?= htmlspecialchars($message) ?></div>
+                <?php endif; ?>
+            </form>
         </div>
-        <div class="footer-text">
-            &copy; <?= date('Y') ?> CGEAT. All rights reserved.
+    </section>
+    <footer class="site-footer">
+        <div>© 2025 CG EAT. All rights reserved.</div>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact</a>
         </div>
     </footer>
     <script>
