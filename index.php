@@ -37,6 +37,57 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             CGEAT is dedicated to improving government efficiency through technology, collaboration, and innovation.
         </p>
     </section>
+    <section class="projects">
+        <h2>Our Projects</h2>
+        <div class="project-cards">
+            <div class="card">
+                <h3>Digital Governance</h3>
+                <p>Modernizing government processes for transparency and accountability.</p>
+            </div>
+            <div class="card">
+                <h3>Citizen Services</h3>
+                <p>Improving access to essential services for all citizens.</p>
+            </div>
+            <div class="card">
+                <h3>Open Data</h3>
+                <p>Promoting data-driven decision making in public administration.</p>
+            </div>
+        </div>
+    </section>
+    <section class="news">
+        <h2>Latest News</h2>
+        <div class="news-list">
+            <div class="news-item">
+                <h3>New E-Government Portal Launched</h3>
+                <p>Our new portal is now live, making public services more accessible.</p>
+            </div>
+            <div class="news-item">
+                <h3>Annual Transparency Report Released</h3>
+                <p>Read our latest findings on government accountability and efficiency.</p>
+            </div>
+        </div>
+    </section>
+    <section class="team">
+        <h2>Meet Our Team</h2>
+        <div class="team-list">
+            <div class="team-member">
+                <h3>Jane Doe</h3>
+                <p>Executive Director</p>
+            </div>
+            <div class="team-member">
+                <h3>John Smith</h3>
+                <p>Head of Technology</p>
+            </div>
+        </div>
+    </section>
+    <section class="partners">
+        <h2>Our Partners</h2>
+        <div class="partner-list">
+            <div class="partner">GovTech</div>
+            <div class="partner">OpenGov</div>
+            <div class="partner">CivicData</div>
+        </div>
+    </section>
     <section class="login-section" id="login">
         <div class="login-container">
             <h2>Member Login</h2>
