@@ -10,14 +10,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CG EAT - Government Efficiency Portal</title>
+    <title>CGEAT - Government Efficiency Portal</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Inter:400,600,700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header class="site-header">
-        <div class="logo">CG EAT</div>
+        <div class="logo">CGEAT</div>
         <nav>
             <a href="#">Home</a>
             <a href="#">About</a>
@@ -27,14 +27,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </nav>
     </header>
     <section class="hero">
-        <h1>Empowering Government Efficiency</h1>
-        <p>Driving digital transformation for better public services.</p>
+        <h1>Our aim is towards an efficient, accountable, and transparent government.</h1>
+        <p>Ensuring better public services and an improved quality of life.</p>
         <a href="#login" class="cta-btn">Get Started</a>
     </section>
     <section class="about">
         <h2>Our Mission</h2>
         <p>
-            CG EAT is dedicated to improving government efficiency through technology, collaboration, and innovation.
+            CGEAT is dedicated to improving government efficiency through technology, collaboration, and innovation.
         </p>
     </section>
     <section class="login-section" id="login">
